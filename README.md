@@ -1,5 +1,9 @@
 # DeleteFolders
 
+![GitHub Actions (build master)](https://github.com/josiasgr/DeleteFolders/workflows/GitHub%20Actions%20(build%20master/develop)/badge.svg?branch=master)
+
+![GitHub Actions (build develop)](https://github.com/josiasgr/DeleteFolders/workflows/GitHub%20Actions%20(build%20master/develop)/badge.svg?branch=develop)
+
 Usage: DeleteFolders [BaseFolder] regex-pattern... [Options]
 
 Delete unwanted content from your work folders.
