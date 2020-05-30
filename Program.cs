@@ -60,7 +60,7 @@ namespace ConsoleApp
         private static string GetResult(
             string baseFolder,
             bool dryrun,
-            IEnumerable<Jx.IO.DeletedStatus> deletedItems)
+            IEnumerable<JxF.IO.DeletedStatus> deletedItems)
         {
             var result = new StringBuilder();
 
@@ -112,7 +112,7 @@ regex-pattern       Required, one or multiple regex patterns to match against th
                 return;
             }
 
-            var fs = new Jx.IO.Directory();
+            var fs = new JxF.IO.Directory();
 
             var tasks = args.Select(s => fs.DeleteFolders(baseFolder, s, useRecycleBin, dryrun)).ToArray();
             Task.WaitAll(tasks);
